@@ -7,6 +7,33 @@ public class Record {
         this.name = name;
         this.surname = surname;
         this.number = number;
-        System.out.println("A record created!");
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public void setNumber (String number) {
+        this.number = number;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public boolean hasNumber () {
+        return !number.equals("[no number]");
     }
 }
